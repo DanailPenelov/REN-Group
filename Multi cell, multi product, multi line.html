@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi cell, multi product, multi line</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+      max-height: 150px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+      color: #ffffff;
+    }
+
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .video {
+      flex: 1 1 480px;
+      max-width: 640px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .caption {
+      margin-top: 15px;
+      font-size: 17px;
+      font-weight: 500;
+      text-align: center;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .video {
+        padding: 15px;
+      }
+
+      iframe {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Banner ot LKDIN cover.png" alt="Лого">
+    <h1>Multi cell, multi product, multi line</h1>
+  </header>
+
+  <div class="video-container">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/lxyMBCUrVb4" allowfullscreen></iframe>
+      <div class="caption">Пример 1: Многостанционно палетизиране</div>
+    </div>
+
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/VqrqCAyhyEk" allowfullscreen></iframe>
+      <div class="caption">Пример 2: Робот с гъвкава конфигурация</div>
+    </div>
+  </div>
+
+</body>
+</html>
