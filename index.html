@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Multi Cell, Multi Product, Multi Line</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi cell, multi product, multi line</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0d47a1, #1976d2);
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+    }
+
+    header {
       text-align: center;
     }
 
@@ -20,34 +23,53 @@
     }
 
     h1 {
-      margin: 20px 0;
+      margin-top: 20px;
       font-size: 2em;
-      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      padding: 0 20px;
     }
 
     .video-container {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 960px;
-      margin: 0 auto 40px;
-      padding: 0 15px;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .video {
+      flex: 1 1 480px;
+      max-width: 640px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
     }
 
     iframe {
       width: 100%;
       height: 360px;
-      max-width: 100%;
       border: none;
+      border-radius: 10px;
     }
 
-    @media (min-width: 768px) {
-      .video-container {
-        flex-direction: row;
+    .caption {
+      margin-top: 15px;
+      font-size: 17px;
+      font-weight: 500;
+      text-align: center;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5em;
       }
 
       iframe {
-        height: 360px;
+        height: 240px;
       }
     }
   </style>
@@ -55,15 +77,35 @@
 <body>
 
   <header>
-    <img src="Banner%20ot%20LKDIN%20cover.png" alt="REN Group Logo" />
+    <img src="Banner ot LKDIN cover.png" alt="Лого">
+    <h1>Multi cell, multi product, multi line</h1>
   </header>
 
-  <h1>Multi Cell, Multi Product, Multi Line</h1>
-
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/lxyMBCUrVb4" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/VqrqCAyhyEk" allowfullscreen></iframe>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/lxyMBCUrVb4" allowfullscreen></iframe>
+      <div class="caption">Пример 1: Многостанционно палетизиране</div>
+    </div>
+
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/VqrqCAyhyEk" allowfullscreen></iframe>
+      <div class="caption">Пример 2: Робот с гъвкава конфигурация</div>
+    </div>
+	
+	<div class="video">
+      <iframe src="https://www.youtube.com/embed/bJF5ojYmGjs?si=4m_lGTlQJeWyF6-B" allowfullscreen></iframe>
+      <div class="caption">Пример 3: Многостанционно палетизиране</div>
+    </div>
+	
+	<div class="video">
+      <iframe src="https://www.youtube.com/embed/_lH2snLVO7w?si=LCET22lI1-DVbHX1" allowfullscreen></iframe>
+      <div class="caption">Пример 3: Многостанционно палетизиране</div>
+    </div>
+	
   </div>
+  
+	
+   
 
 </body>
 </html>
